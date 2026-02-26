@@ -1,0 +1,177 @@
+/* 移动端修复 - 终极版本 */
+
+.mobile-menu-toggle { display: none; }
+.nav-menu { 
+    display: flex; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    gap: 2rem;
+}
+
+.nav-brand { 
+    display: flex; 
+    align-items: center; 
+    gap: 2rem; 
+}
+
+.nav-phone {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ff6b9d;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 0.5rem 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.nav-phone:hover {
+    background: rgba(255, 107, 157, 0.1);
+    transform: scale(1.05);
+}
+
+.nav-phone i { font-size: 1.1rem; }
+
+.nav-container,
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 移动端优化 */
+@media (max-width: 768px) {
+    .container { padding: 0 1rem; }
+    .navbar { padding: 1rem 0; position: relative; }
+    
+    /* 电话号码在移动端显示 */
+    .nav-brand { gap: 1rem; }
+    .nav-phone { font-size: 0.85rem; }
+    .nav-phone span { display: inline !important; }
+    
+    /* 汉堡按钮显示 */
+    .mobile-menu-toggle {
+        display: flex !important;
+        flex-direction: column;
+        cursor: pointer;
+        z-index: 1001;
+        width: 30px;
+        height: 24px;
+        justify-content: space-between;
+    }
+    
+    .mobile-menu-toggle span {
+        width: 25px;
+        height: 3px;
+        background: #ff6b9d;
+        transition: all 0.3s ease;
+        border-radius: 2px;
+        display: block;
+    }
+    
+    /* 汉堡按钮动画 */
+    .mobile-menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+    .mobile-menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .mobile-menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+    
+    /* 移动端菜单 - 关键修复 */
+    .nav-menu {
+        display: none !important; /* 默认隐藏 */
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 3rem;
+        z-index: 1000;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+    
+    /* 菜单激活状态 - 强制显示 */
+    .nav-menu.active {
+        display: flex !important;
+    }
+    
+    .nav-menu li { 
+        margin: 1.5rem 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-menu a {
+        font-size: 1.4rem;
+        padding: 1.2rem 2.5rem;
+        color: #333;
+        text-decoration: none;
+        border-radius: 25px;
+        display: block;
+        transition: all 0.3s ease;
+        font-weight: 500;
+    }
+    
+    .nav-menu a:hover,
+    .nav-menu a.active {
+        background: #ff6b9d;
+        color: white;
+        transform: scale(1.05);
+    }
+    
+    /* 其他移动端优化 */
+    .hero { padding: 4rem 0; text-align: center; }
+    .hero h2 { font-size: 2rem; }
+    .gallery-grid { grid-template-columns: 1fr; gap: 1rem; }
+    .services-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .section { padding: 3rem 0; }
+}
+
+/* 超小屏幕 */
+@media (max-width: 480px) {
+    .nav-phone { font-size: 0.8rem; }
+    .nav-phone span { display: inline !important; }
+    .nav-brand { gap: 0.8rem; }
+    
+    .nav-menu { top: 70px; height: calc(100vh - 70px); }
+    .nav-menu a { font-size: 1.2rem; padding: 1rem 2rem; }
+}
+
+/* PC端确保正常 */
+@media (min-width: 769px) {
+    .nav-menu {
+        display: flex !important;
+        position: static !important;
+        flex-direction: row !important;
+        background: none !important;
+        width: auto !important;
+        height: auto !important;
+        padding: 0 !important;
+        gap: 2rem;
+        box-shadow: none !important;
+    }
+    
+    .nav-menu li { 
+        margin: 0 !important; 
+        width: auto !important;
+    }
+    
+    .nav-menu a {
+        font-size: 1rem !important;
+        padding: 0.5rem 1rem !important;
+        display: inline-block !important;
+    }
+    
+    .mobile-menu-toggle { display: none !important; }
+}
