@@ -1,0 +1,467 @@
+/* 移动端响应式样式增强 */
+
+/* PC端导航确保 */
+.mobile-menu-toggle {
+    display: none;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* PC端기본 스타일 확보 */
+
+/* 导航栏电话号码样式 */
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-phone {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ff6b9d;
+    font-weight: 600;
+    font-size: 1rem;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    padding: 0.5rem 0.8rem;
+}
+
+.nav-phone:hover {
+    background: rgba(255, 107, 157, 0.1);
+    color: #c44569;
+    transform: scale(1.05);
+}
+
+.nav-phone i {
+    font-size: 1.1rem;
+}
+
+/* PC端确保导航容器正确布局 */
+.nav-container,
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 基础移动端优化 */
+@media (max-width: 768px) {
+    /* 容器优化 */
+    .container {
+        padding: 0 1rem;
+    }
+
+    /* 导航优化 */
+    .navbar {
+        padding: 1rem 0;
+    }
+
+    /* 移动端电话号码优化 */
+    .nav-brand {
+        gap: 1rem;
+    }
+    
+    .nav-phone {
+        font-size: 0.9rem;
+    }
+    
+    .nav-phone span {
+        display: none;
+    }
+    
+    .nav-phone i {
+        font-size: 1.3rem;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 2rem;
+        transition: left 0.3s ease;
+        z-index: 999;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        margin: 1rem 0;
+    }
+
+    .nav-menu a {
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+    }
+
+    .nav-menu a:hover,
+    .nav-menu a.active {
+        background: #ff6b9d;
+        color: white;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .mobile-menu-toggle span {
+        width: 25px;
+        height: 3px;
+        background: #ff6b9d;
+        margin: 3px 0;
+        transition: 0.3s;
+        border-radius: 2px;
+    }
+
+    .mobile-menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+
+    .mobile-menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+
+    /* 英雄区域优化 */
+    .hero {
+        padding: 4rem 0;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+        line-height: 1.3;
+        margin-bottom: 1rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+
+    /* 갤러리 优化 */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .gallery-item {
+        height: 250px;
+    }
+
+    /* 섹션 패딩 조정 */
+    .section {
+        padding: 3rem 0;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* 서비스 카드 */
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .service-card {
+        padding: 2rem;
+    }
+
+    .service-card h3 {
+        font-size: 1.3rem;
+    }
+
+    /* 견적 폼 최적화 */
+    .quote-form {
+        padding: 2rem;
+    }
+
+    .quote-form h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .form-control {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    /* 푸터 최적화 */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .footer-section h3 {
+        font-size: 1.1rem;
+    }
+
+    .footer-section p {
+        font-size: 0.9rem;
+    }
+}
+
+/* 초소형 모바일 최적화 */
+@media (max-width: 480px) {
+    /* 极小屏幕隐藏电话号码 */
+    .nav-phone {
+        display: none;
+    }
+    
+    .nav-brand {
+        gap: 0;
+    }
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.9rem 1.5rem;
+    }
+
+    .gallery-item {
+        height: 200px;
+    }
+
+    .service-card {
+        padding: 1.5rem;
+    }
+
+    .quote-form {
+        padding: 1.5rem;
+    }
+
+    .form-control {
+        padding: 0.9rem;
+    }
+}
+
+/* 메뉴 페이지 모바일 최적화 */
+@media (max-width: 768px) {
+    /* 메뉴 탭 모바일 최적화 */
+    .menu-tabs {
+        flex-direction: column;
+        gap: 0.8rem;
+        padding: 1.5rem 0;
+    }
+    
+    .menu-tab {
+        font-size: 1.2rem;
+        padding: 0.8rem 1.5rem;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .menu-category-container {
+        padding: 2rem 1rem;
+    }
+    
+    .category-title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* 九宫格 모바일 최적화 */
+    .menu-grid-9 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        max-width: 100%;
+    }
+    
+    .menu-item-card {
+        padding: 1rem;
+    }
+    
+    .menu-item-card .menu-photo {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 0.8rem;
+    }
+    
+    .menu-item-card h4 {
+        font-size: 0.9rem;
+    }
+
+    /* CTA 섹션 모바일 최적화 */
+    .quote-cta {
+        padding: 3rem 0;
+    }
+
+    .quote-content h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .quote-content p {
+        font-size: 1rem;
+    }
+    
+    .quote-info {
+        flex-direction: column;
+        gap: 1rem;
+        margin: 1.5rem 0;
+    }
+    
+    .quote-btn {
+        font-size: 1rem;
+        padding: 1rem 2rem;
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* 서비스 페이지 모바일 최적화 */
+@media (max-width: 768px) {
+    .page-header {
+        padding: 3rem 0;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .page-header p {
+        font-size: 1rem;
+    }
+
+    .overview-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .process-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .service-features {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+/* 후기 페이지 모바일 최적화 */
+@media (max-width: 768px) {
+    .rating-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .gallery-tabs {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .gallery-tab {
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 터치 디바이스 최적화 */
+@media (hover: none) {
+    .gallery-item:hover .gallery-overlay {
+        opacity: 0;
+    }
+
+    .gallery-item .gallery-overlay {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    .service-card:hover {
+        transform: none;
+    }
+
+    .btn:hover {
+        transform: none;
+    }
+
+    .menu-item-card:hover {
+        transform: none;
+    }
+
+    .menu-tab:hover {
+        background: #ff6b9d;
+        color: white;
+    }
+}

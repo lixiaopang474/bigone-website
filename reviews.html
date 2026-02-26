@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객 후기 | ❤️ Heart Food Truck</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/mobile-responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 네비게이션 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1 class="logo">빅원컴퍼니</h1>
+                <a href="tel:010-6590-8486" class="nav-phone">
+                    <i class="fas fa-phone"></i>
+                    <span>010-6590-8486</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="services.html">서비스 소개</a></li>
+                <li><a href="menu.html">메뉴 안내</a></li>
+                <li><a href="reviews.html" class="active">후기</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 페이지 헤더 -->
+    <section class="page-header">
+        <div class="container">
+            <h1>💕 고객 후기</h1>
+            <p>빅원컴퍼니와 함께한 행복한 순간들</p>
+        </div>
+    </section>
+
+    <main>
+        <!-- 후기 통계 -->
+        <section class="review-stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-icon">⭐</div>
+                        <div class="stat-number">4.9</div>
+                        <div class="stat-label">평균 평점</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">😊</div>
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">만족한 고객</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">🎉</div>
+                        <div class="stat-number">200+</div>
+                        <div class="stat-label">성공한 이벤트</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">💖</div>
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">재방문 의향</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 고객 후기 -->
+        <section class="customer-reviews">
+            <div class="container">
+                <h2>💬 고객 후기</h2>
+                <p class="section-subtitle">실제 고객들의 생생한 후기를 확인해보세요</p>
+                
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">👩‍💼</div>
+                                <div class="reviewer-details">
+                                    <h4>김○○님</h4>
+                                    <span class="reviewer-type">회사 행사</span>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p>"회사 창립 기념일 행사에 빅원컴퍼니를 불렀는데 정말 대성공이었어요! 직원들 모두 너무 만족했고, 특히 아이스크림이 정말 맛있었습니다. 서비스도 친절하고 시간도 정확히 지켜주셔서 감사했어요. 다음에도 꼭 다시 부르고 싶어요!"</p>
+                        </div>
+                        <div class="review-date">2024.01.15</div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">🎓</div>
+                                <div class="reviewer-details">
+                                    <h4>박○○님</h4>
+                                    <span class="reviewer-type">대학교 축제</span>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p>"대학 축제에서 빅원컴퍼니 만났는데, 진짜 줄이 엄청 길었어요ㅋㅋ 그런데 기다린 보람이 있었습니다! 소프트아이스크림이 정말 부드럽고 맛있어서 친구들이랑 두 번 더 사먹었어요. 인스타 사진도 예쁘게 나와서 좋았습니다 ❤️"</p>
+                        </div>
+                        <div class="review-date">2024.01.08</div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">⛪</div>
+                                <div class="reviewer-details">
+                                    <h4>이○○님</h4>
+                                    <span class="reviewer-type">교회 행사</span>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p>"교회 바자회에 와주셨는데 정말 감사했습니다. 아이들부터 어르신들까지 모두 좋아하셨고, 특히 깨끗하게 관리해주셔서 안심하고 먹을 수 있었어요. 가격도 합리적이고 맛도 최고였습니다. 강력 추천드려요!"</p>
+                        </div>
+                        <div class="review-date">2023.12.24</div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">🪖</div>
+                                <div class="reviewer-details">
+                                    <h4>최○○님</h4>
+                                    <span class="reviewer-type">부대 위문</span>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p>"부대 행사로 왔는데 장병들이 너무 좋아했어요! 달콤한 디저트로 힘든 군생활의 스트레스가 확 풀리는 느낌이었습니다. 복잡한 부대 출입 절차도 미리 준비해주셔서 편했고, 무엇보다 맛이 진짜 좋았어요. 감사합니다!"</p>
+                        </div>
+                        <div class="review-date">2023.12.10</div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">🎂</div>
+                                <div class="reviewer-details">
+                                    <h4>정○○님</h4>
+                                    <span class="reviewer-type">생일 파티</span>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p>"딸 생일 파티에 섭외했는데 정말 성공적이었어요! 아이들이 너무 신기해하고 좋아했습니다. 예쁜 디자인의 푸드트럭도 파티 분위기를 더욱 특별하게 만들어줬고, 아이스크림도 정말 맛있었어요. 완전 만족합니다! 💖"</p>
+                        </div>
+                        <div class="review-date">2023.11.28</div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">🏃‍♂️</div>
+                                <div class="reviewer-details">
+                                    <h4>한○○님</h4>
+                                    <span class="reviewer-type">운동회</span>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p>"학교 운동회에서 만났는데 더운 날씨에 시원한 아이스크림이 정말 최고였어요! 아이들이 줄을 서서 기다릴 정도로 인기가 많았습니다. 선생님들도 커피 마시면서 쉬어가시더라고요. 다음 행사 때도 꼭 와주세요!"</p>
+                        </div>
+                        <div class="review-date">2023.11.15</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 활동 사진 갤러리 -->
+        <section class="activity-gallery">
+            <div class="container">
+                <h2>📸 활동 현장</h2>
+                <p class="section-subtitle">빅원컴퍼니의 다양한 활동 현장을 만나보세요</p>
+                <p style="font-size: 0.85rem; color: #666; margin-top: 0.5rem;">※ 개인정보보호를 위해 인물 사진은 모자이크 처리되었습니다</p>
+                
+                <div class="gallery-tabs">
+                    <button class="gallery-tab active" onclick="showGallery('all')">전체</button>
+                    <button class="gallery-tab" onclick="showGallery('university')">대학교</button>
+                    <button class="gallery-tab" onclick="showGallery('company')">기업행사</button>
+                    <button class="gallery-tab" onclick="showGallery('festival')">축제</button>
+                    <button class="gallery-tab" onclick="showGallery('private')">개인행사</button>
+                </div>
+
+                <div class="photo-gallery">
+                    <div class="gallery-item" data-category="university">
+                        <img src="images/foodtruck1.jpg" alt="대학교 겨울 축제">
+                        <div class="gallery-overlay">
+                            <h3>대학교 겨울 축제</h3>
+                            <p>추운 겨울에도 뜨거운 인기! 학생들의 줄이 끊이지 않는 현장</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="festival">
+                        <img src="images/foodtruck2.jpg" alt="가을 지역 축제">
+                        <div class="gallery-overlay">
+                            <h3>가을 지역 축제</h3>
+                            <p>단풍이 아름다운 가을 축제에서 달콤한 추억을 만들어드렸어요</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="festival">
+                        <img src="images/foodtruck4.jpg" alt="체육대회">
+                        <div class="gallery-overlay">
+                            <h3>체육대회 현장</h3>
+                            <p>운동으로 뜨거워진 몸을 시원한 디저트로 달래드렸어요</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="private">
+                        <img src="images/icecream.jpg" alt="개인 파티">
+                        <div class="gallery-overlay">
+                            <h3>달콤한 순간</h3>
+                            <p>특별한 날의 특별한 디저트, 프리미엄 소프트아이스크림</p>
+                        </div>
+                    </div>
+
+                    <!-- 갤러리 아이템들 -->
+
+                    <div class="gallery-item" data-category="festival">
+                        <img src="images/churros.jpg" alt="축제 현장 츄러스">
+                        <div class="gallery-overlay">
+                            <h3>축제의 별미, 츄러스</h3>
+                            <p>축제 현장에서 가장 인기 많은 바삭한 츄러스</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="company">
+                        <img src="images/oden2.jpg" alt="기업 행사 간식">
+                        <div class="gallery-overlay">
+                            <h3>따뜻한 간식 서비스</h3>
+                            <p>추운 날씨에 몸을 따뜻하게 해주는 오뎅</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="company">
+                        <img src="images/construction1.jpg" alt="건설 현장 위문">
+                        <div class="gallery-overlay">
+                            <h3>건설 현장 위문</h3>
+                            <p>2026년 새해를 맞이하여 건설 현장 근로자들을 위문</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="company">
+                        <img src="images/construction2.jpg" alt="현장 근로자 서비스">
+                        <div class="gallery-overlay">
+                            <h3>현장 근로자 서비스</h3>
+                            <p>힘든 일터에서 따뜻한 위로와 달콤한 휴식을</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="university">
+                        <img src="images/green-truck1.jpg" alt="학교 행사">
+                        <div class="gallery-overlay">
+                            <h3>학교 행사 현장</h3>
+                            <p>학생들에게 인기 만점! 줄이 끊이지 않는 맛집</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="festival">
+                        <img src="images/cooking-scene.jpg" alt="요리 현장">
+                        <div class="gallery-overlay">
+                            <h3>실시간 요리 현장</h3>
+                            <p>신선한 재료로 바로바로 만드는 따뜻한 음식</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="private">
+                        <img src="images/milk-tea.jpg" alt="특제 음료">
+                        <div class="gallery-overlay">
+                            <h3>특제 음료 서비스</h3>
+                            <p>빅원컴퍼니만의 특별한 음료 레시피</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="university">
+                        <img src="images/school-queue.jpg" alt="학교 대인기">
+                        <div class="gallery-overlay">
+                            <h3>학교에서 대인기</h3>
+                            <p>수십 명의 학생들이 줄을 서서 기다리는 명물 푸드트럭</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="festival">
+                        <img src="images/waffle-stand.jpg" alt="와플 스탠드">
+                        <div class="gallery-overlay">
+                            <h3>특별한 와플 서비스</h3>
+                            <p>귀여운 캐릭터와 함께하는 프리미엄 와플 판매</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="festival">
+                        <img src="images/waffles-boxes.jpg" alt="와플 대량 준비">
+                        <div class="gallery-overlay">
+                            <h3>완벽한 준비성</h3>
+                            <p>행사를 위해 미리 준비된 수십 개의 신선한 와플</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 고객 평점 섹션 -->
+        <section class="rating-breakdown">
+            <div class="container">
+                <h2>⭐ 평점 분석</h2>
+                <div class="rating-grid">
+                    <div class="rating-summary">
+                        <div class="overall-rating">
+                            <span class="rating-number">4.9</span>
+                            <span class="rating-max">/5.0</span>
+                        </div>
+                        <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                        <div class="rating-count">총 247개의 후기</div>
+                    </div>
+                    
+                    <div class="rating-bars">
+                        <div class="rating-bar">
+                            <span class="star-label">5점</span>
+                            <div class="bar-container">
+                                <div class="bar-fill" style="width: 85%;"></div>
+                            </div>
+                            <span class="percentage">85%</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span class="star-label">4점</span>
+                            <div class="bar-container">
+                                <div class="bar-fill" style="width: 12%;"></div>
+                            </div>
+                            <span class="percentage">12%</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span class="star-label">3점</span>
+                            <div class="bar-container">
+                                <div class="bar-fill" style="width: 3%;"></div>
+                            </div>
+                            <span class="percentage">3%</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span class="star-label">2점</span>
+                            <div class="bar-container">
+                                <div class="bar-fill" style="width: 0%;"></div>
+                            </div>
+                            <span class="percentage">0%</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span class="star-label">1점</span>
+                            <div class="bar-container">
+                                <div class="bar-fill" style="width: 0%;"></div>
+                            </div>
+                            <span class="percentage">0%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA 섹션 -->
+        <section class="reviews-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>🎯 당신도 특별한 경험을 해보세요!</h2>
+                    <p>지금까지 500명 이상의 고객이 만족한 빅원컴퍼니의 서비스</p>
+                    <div class="cta-buttons">
+                        <a href="index.html#quote" class="btn-primary">지금 견적 문의하기</a>
+                        <a href="menu.html" class="btn-secondary">메뉴 확인하기</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>빅원컴퍼니</h3>
+                    <p>사랑을 담아 만든 특별한 맛<br>어디든 찾아가는 맞춤 서비스</p>
+                </div>
+                <div class="footer-section">
+                    <h4>서비스</h4>
+                    <ul>
+                        <li><a href="services.html">서비스 소개</a></li>
+                        <li><a href="menu.html">메뉴 안내</a></li>
+                        <li><a href="index.html#quote">견적 문의</a></li>
+                        <li><a href="reviews.html">고객 후기</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>연락처</h4>
+                    <ul>
+                        <li>☎️ 전화: 01065908486</li>
+                        <li>✉️ 이메일: cyeon0125@naver.com</li>
+                        <li>🌍 운영지역: 전국</li>
+                        <li>⏰ 운영시간: 24시간</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 빅원컴퍼니. 모든 권리 보유.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    
+    <script>
+        // 갤러리 필터링
+        function showGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const tabs = document.querySelectorAll('.gallery-tab');
+            
+            // 탭 활성화 상태 변경
+            tabs.forEach(tab => tab.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // 갤러리 아이템 필터링
+            items.forEach(item => {
+                if (category === 'all' || item.dataset.category === category) {
+                    item.style.display = 'block';
+                    item.style.animation = 'fadeInUp 0.5s ease forwards';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+    <style>
+        /* 후기 페이지 스타일 */
+        .page-header {
+            background: linear-gradient(135deg, #ff6b9d, #c44569);
+            color: white;
+            padding: 120px 0 60px;
+            margin-top: 70px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        /* 후기 통계 */
+        .review-stats {
+            padding: 60px 0;
+            background: white;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 2rem;
+            background: linear-gradient(135deg, #fff5f8 0%, #ffe0f0 100%);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(255, 107, 157, 0.2);
+        }
+
+        .stat-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ff6b9d;
+            display: block;
+        }
+
+        .stat-label {
+            color: #666;
+            font-weight: 500;
+            margin-top: 0.5rem;
+        }
+
+        /* 고객 후기 */
+        .customer-reviews {
+            padding: 80px 0;
+            background: #fafbfc;
+        }
+
+        .customer-reviews h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .review-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+
+        .review-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .reviewer-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .reviewer-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #ff6b9d, #c44569);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .reviewer-details h4 {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.2rem;
+        }
+
+        .reviewer-type {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .rating .stars {
+            color: #ffd93d;
+            font-size: 1.2rem;
+        }
+
+        .review-content p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .review-date {
+            color: #999;
+            font-size: 0.9rem;
+            text-align: right;
+        }
+
+        /* 활동 갤러리 */
+        .activity-gallery {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .activity-gallery h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .gallery-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0 3rem;
+        }
+
+        .gallery-tab {
+            background: white;
+            border: 2px solid #e1e8ed;
+            color: #666;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .gallery-tab.active {
+            background: linear-gradient(45deg, #ff6b9d, #c44569);
+            color: white;
+            border-color: transparent;
+        }
+
+        .gallery-tab:hover {
+            background: #f8f9fa;
+        }
+
+        .gallery-tab.active:hover {
+            background: linear-gradient(45deg, #ff6b9d, #c44569);
+        }
+
+        /* 평점 분석 */
+        .rating-breakdown {
+            padding: 80px 0;
+            background: #fafbfc;
+        }
+
+        .rating-breakdown h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 3rem;
+        }
+
+        .rating-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        .rating-summary {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .overall-rating {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #ff6b9d;
+            margin-bottom: 1rem;
+        }
+
+        .rating-max {
+            font-size: 1.5rem;
+            color: #999;
+        }
+
+        .rating-stars {
+            font-size: 2rem;
+            color: #ffd93d;
+            margin-bottom: 1rem;
+        }
+
+        .rating-count {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .rating-bars {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-self: center;
+        }
+
+        .rating-bar {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .star-label {
+            width: 40px;
+            text-align: right;
+            font-weight: 500;
+        }
+
+        .bar-container {
+            flex: 1;
+            height: 10px;
+            background: #e1e8ed;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .bar-fill {
+            height: 100%;
+            background: linear-gradient(45deg, #ff6b9d, #c44569);
+            transition: width 1s ease;
+        }
+
+        .percentage {
+            width: 40px;
+            text-align: left;
+            font-weight: 500;
+            color: #666;
+        }
+
+        /* CTA 섹션 */
+        .reviews-cta {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #fff5f8 0%, #ffe0f0 100%);
+            text-align: center;
+        }
+
+        .cta-content h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .btn-primary, .btn-secondary {
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #ff6b9d, #c44569);
+            color: white;
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #ff6b9d;
+            border: 2px solid #ff6b9d;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 107, 157, 0.4);
+        }
+
+        .btn-secondary:hover {
+            background: #ff6b9d;
+            color: white;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* 반응형 디자인 */
+        @media (max-width: 768px) {
+            .rating-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-tabs {
+                flex-wrap: wrap;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    
+    <script>
+        // 모바일 메뉴 토글 기능
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileToggle = document.querySelector('.mobile-menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (mobileToggle && navMenu) {
+                mobileToggle.addEventListener('click', function() {
+                    mobileToggle.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+
+                // 메뉴 항목 클릭 시 메뉴 닫기
+                const navLinks = document.querySelectorAll('.nav-menu a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileToggle.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    });
+                });
+
+                // 외부 클릭 시 메뉴 닫기
+                document.addEventListener('click', function(e) {
+                    if (!mobileToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                        mobileToggle.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
