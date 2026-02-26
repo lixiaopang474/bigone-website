@@ -75,7 +75,7 @@
     }
     
     .nav-phone span {
-        display: none;
+        display: inline; /* 显示电话号码 */
     }
     
     .nav-phone i {
@@ -259,13 +259,18 @@
 
 /* 초소형 모바일 최적화 */
 @media (max-width: 480px) {
-    /* 极小屏幕隐藏电话号码 */
+    /* 超小屏幕也显示电话号码 */
     .nav-phone {
-        display: none;
+        font-size: 0.8rem;
+        display: flex; /* 确保显示 */
+    }
+    
+    .nav-phone span {
+        display: inline;
     }
     
     .nav-brand {
-        gap: 0;
+        gap: 0.8rem;
     }
     .hero h2 {
         font-size: 1.8rem;
