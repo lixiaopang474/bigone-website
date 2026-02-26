@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>빅원컴퍼니 | 전국 푸드트럭 서비스</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/mobile-responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 네비게이션 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1 class="logo">빅원컴퍼니</h1>
+                <a href="tel:010-6590-8486" class="nav-phone">
+                    <i class="fas fa-phone"></i>
+                    <span>010-6590-8486</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">홈</a></li>
+                <li><a href="services.html">서비스 소개</a></li>
+                <li><a href="menu.html">메뉴 안내</a></li>
+                <li><a href="reviews.html">후기</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 메인 슬라이더 -->
+        <section id="home" class="hero-slider">
+            <div class="slider-container">
+                <div class="slide active">
+                    <div class="slide-image-composite">
+                        <img src="images/support-truck.jpg" alt="대학 응원 현장 (좌)" style="object-fit: cover; width: 50%; height: 100%; float: left;">
+                        <img src="images/foodtruck1.jpg" alt="겨울 현장 운영 (우)" style="object-fit: cover; width: 50%; height: 100%; float: right;">
+                    </div>
+                    <div class="slide-content">
+                        <h1>전국 어디든 찾아가는 빅원컴퍼니</h1>
+                        <p>간식차, 커피차, 밥차 24시간 서비스</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-image-composite">
+                        <img src="images/foodtruck2.jpg" alt="가을 현장 운영 (좌)" style="object-fit: cover; width: 50%; height: 100%; float: left;">
+                        <img src="images/foodtruck3.jpg" alt="공원 운영 (우)" style="object-fit: cover; width: 50%; height: 100%; float: right;">
+                    </div>
+                    <div class="slide-content">
+                        <h1>기업행사, 연예인서포트, 군부대 위문</h1>
+                        <p>어떤 현장이든 최고 품질로 서비스합니다</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <button class="prev" onclick="previousSlide()">‹</button>
+                <button class="next" onclick="nextSlide()">›</button>
+            </div>
+            <div class="slider-dots">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </section>
+
+        <!-- 운영 현장 사진 섹션 -->
+        <section class="gallery-section">
+            <div class="container">
+                <h2>❤️ 인기 만점! 줄 서서 먹는 맛</h2>
+                <p class="section-subtitle">사랑받는 빅원컴퍼니의 현장을 만나보세요</p>
+                <p style="font-size: 0.85rem; color: #666; margin-top: 0.5rem;">※ 고객 개인정보보호를 위해 인물은 모자이크 처리되었습니다</p>
+                
+                <div class="photo-gallery">
+                    <div class="gallery-item">
+                        <img src="images/foodtruck1.jpg" alt="많은 사람들이 줄을 서서 기다리는 모습">
+                        <div class="gallery-overlay">
+                            <h3>대인기! 줄서서 먹는 맛</h3>
+                            <p>추운 겨울에도 찾아주는 고객들</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/icecream.jpg" alt="달콤한 소프트 아이스크림">
+                        <div class="gallery-overlay">
+                            <h3>프리미엄 소프트 아이스크림</h3>
+                            <p>부드럽고 진한 맛의 아이스크림</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/churros.jpg" alt="갓 튀긴 바삭한 츄러스">
+                        <div class="gallery-overlay">
+                            <h3>갓 튀긴 바삭한 츄러스</h3>
+                            <p>지금 막 기름에서 꺼낸 따끈한 츄러스</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/dessert2.jpg" alt="컵빙수">
+                        <div class="gallery-overlay">
+                            <h3>컵빙수</h3>
+                            <p>시원한 여름 별미 팥빙수</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/cooking-scene.jpg" alt="요리 현장">
+                        <div class="gallery-overlay">
+                            <h3>정성스런 요리 과정</h3>
+                            <p>신선한 재료로 정성껏 만드는 맛있는 음식</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/cup-drinks.jpg" alt="음료 준비">
+                        <div class="gallery-overlay">
+                            <h3>다양한 음료 준비</h3>
+                            <p>고객을 위해 미리 준비된 특제 음료들</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/spiral-potatoes.jpg" alt="회오리감자">
+                        <div class="gallery-overlay">
+                            <h3>회오리감자</h3>
+                            <p>바삭하고 맛있는 특제 시즈닝 회오리감자</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/school-queue.jpg" alt="학교 현장">
+                        <div class="gallery-overlay">
+                            <h3>학교에서의 인기</h3>
+                            <p>학생들이 줄을 서서 기다릴 만큼 인기 만점!</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/foodtruck3.jpg" alt="아름다운 공원에서의 운영">
+                        <div class="gallery-overlay">
+                            <h3>어디든 찾아가는 서비스</h3>
+                            <p>공원, 대학교, 이벤트 현장까지</p>
+                        </div>
+                    </div>
+                    <!-- 마지막 이미지 제거됨 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 서비스 소개 섹션 -->
+        <section class="services-highlight">
+            <div class="container">
+                <h2>빅원컴퍼니 서비스</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🍦</div>
+                        <h3>서비스 소개</h3>
+                        <p>다양한 이벤트와 현장에서<br>최고의 디저트 서비스를 제공합니다</p>
+                        <a href="services.html" class="service-link">자세히 보기 →</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📋</div>
+                        <h3>메뉴 안내</h3>
+                        <p>커피차, 간식차, 식사차<br>다양한 메뉴를 준비했습니다</p>
+                        <a href="menu.html" class="service-link">메뉴 보기 →</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">💰</div>
+                        <h3>비용 안내</h3>
+                        <p>투명하고 합리적인 비용으로<br>최고의 서비스를 제공합니다</p>
+                        <a href="#quote" class="service-link">견적 문의 →</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">☎️</div>
+                        <h3>문의하기</h3>
+                        <p>궁금한 점이나 예약 문의는<br>언제든지 연락주세요</p>
+                        <a href="#quote" class="service-link">연락하기 →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 견적 문의 섹션 -->
+        <section id="quote" class="quote-section">
+            <div class="container">
+                <h2>📝 견적 문의</h2>
+                <p class="section-subtitle">빅원컴퍼니와 함께 특별한 추억을 만들어보세요</p>
+                
+                <form class="quote-form" onsubmit="submitQuote(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="eventType">활동 주체</label>
+                            <select id="eventType" name="eventType" required>
+                                <option value="">선택해주세요</option>
+                                <option value="university">대학교</option>
+                                <option value="company">회사/기업</option>
+                                <option value="military">군부대</option>
+                                <option value="church">교회</option>
+                                <option value="festival">축제/이벤트</option>
+                                <option value="wedding">결혼식</option>
+                                <option value="private">개인 파티</option>
+                                <option value="other">기타</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="customerName">담당자 성함</label>
+                            <input type="text" id="customerName" name="customerName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="eventDate">희망 날짜</label>
+                            <input type="date" id="eventDate" name="eventDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="eventTime">희망 시간</label>
+                            <input type="time" id="eventTime" name="eventTime" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="peopleCount">예상 인원</label>
+                            <select id="peopleCount" name="peopleCount" required>
+                                <option value="">선택해주세요</option>
+                                <option value="50-100">50-100명</option>
+                                <option value="100-200">100-200명</option>
+                                <option value="200-300">200-300명</option>
+                                <option value="300-500">300-500명</option>
+                                <option value="500+">500명 이상</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="powerSupply">전원 공급</label>
+                            <select id="powerSupply" name="powerSupply" required>
+                                <option value="">선택해주세요</option>
+                                <option value="available">전원 공급 가능</option>
+                                <option value="not-available">전원 공급 불가</option>
+                                <option value="unknown">확인 필요</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">연락처</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="payment">결제 방법</label>
+                            <select id="payment" name="payment" required>
+                                <option value="">선택해주세요</option>
+                                <option value="cash">현금</option>
+                                <option value="card">카드</option>
+                                <option value="transfer">계좌이체</option>
+                                <option value="company">회사 결제</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">행사 장소</label>
+                        <input type="text" id="address" name="address" placeholder="상세 주소를 입력해주세요" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="menuType">희망 메뉴</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="menu" value="coffee"> 커피차 (아메리카노, 라떼, 음료류)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="menu" value="snacks"> 간식차 (아이스크림, 디저트, 음료)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="menu" value="meals"> 식사차 (떡볶이, 핫도그, 간단 식사)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="menu" value="custom"> 맞춤 메뉴 (상담 후 결정)
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="requirements">상세 요구사항</label>
+                        <textarea id="requirements" name="requirements" rows="4" placeholder="특별한 요청사항이나 추가로 전달하고 싶은 내용을 적어주세요"></textarea>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit" class="submit-btn">견적 문의 보내기 ❤️</button>
+                        <p class="form-note">* 문의 주신 내용을 확인 후 24시간 내에 연락드리겠습니다.</p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>빅원컴퍼니</h3>
+                    <p>사랑을 담아 만든 특별한 맛<br>어디든 찾아가는 맞춤 서비스</p>
+                </div>
+                <div class="footer-section">
+                    <h4>서비스</h4>
+                    <ul>
+                        <li><a href="services.html">서비스 소개</a></li>
+                        <li><a href="menu.html">메뉴 안내</a></li>
+                        <li><a href="#quote">견적 문의</a></li>
+                        <li><a href="reviews.html">고객 후기</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>연락처</h4>
+                    <ul>
+                        <li>☎️ 전화: 01065908486</li>
+                        <li>✉️ 이메일: cyeon0125@naver.com</li>
+                        <li>🌍 운영지역: 전국</li>
+                        <li>⏰ 운영시간: 24시간</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 빅원컴퍼니. 모든 권리 보유.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script>
+        // 移动端导航菜单切换
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileToggle = document.querySelector('.mobile-menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (mobileToggle && navMenu) {
+                mobileToggle.addEventListener('click', function() {
+                    mobileToggle.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+
+                // 点击菜单项后关闭移动端菜单
+                const navLinks = document.querySelectorAll('.nav-menu a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileToggle.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    });
+                });
+
+                // 点击外部区域关闭菜单
+                document.addEventListener('click', function(e) {
+                    if (!mobileToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                        mobileToggle.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    }
+                });
+            }
+        });
+    </script>
+
+    <!-- 移动端底部导航 -->
+    <div class="bottom-nav">
+        <div class="bottom-nav-container">
+            <div class="bottom-nav-item">
+                <a href="index.html" class="active">홈</a>
+            </div>
+            <div class="bottom-nav-item">
+                <a href="services.html">서비스</a>
+            </div>
+            <div class="bottom-nav-item">
+                <a href="menu.html">메뉴</a>
+            </div>
+            <div class="bottom-nav-item">
+                <a href="reviews.html">후기</a>
+            </div>
+        </div>
+    </div>
+
+    <style>
+    /* 移动端底部导航样式 */
+    @media (max-width: 768px) {
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #ff6b9d;
+            padding: 0.8rem 0;
+            z-index: 1000;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+            display: block;
+        }
+        
+        .bottom-nav-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        
+        .bottom-nav-item {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .bottom-nav-item a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 500;
+            display: block;
+            padding: 0.4rem;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+        
+        .bottom-nav-item a:hover,
+        .bottom-nav-item a.active {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        /* 隐藏顶部原有菜单 */
+        .nav-menu {
+            display: none !important;
+        }
+        
+        .mobile-menu-toggle {
+            display: none !important;
+        }
+        
+        /* 确保电话号码显示 */
+        .nav-phone span {
+            display: inline !important;
+        }
+        
+        /* 给body添加底部间距 */
+        body {
+            padding-bottom: 65px;
+        }
+    }
+
+    /* PC端隐藏底部导航 */
+    @media (min-width: 769px) {
+        .bottom-nav {
+            display: none !important;
+        }
+        
+        body {
+            padding-bottom: 0 !important;
+        }
+    }
+    </style>
+</body>
+</html>
