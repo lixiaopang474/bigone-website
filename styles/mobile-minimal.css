@@ -1,0 +1,17 @@
+/* 最小化移动端修复 - 只修复电话号码显示 */
+
+/* 这个文件只做最必要的修改，不破坏任何原有样式 */
+
+/* 移动端电话号码显示修复 */
+@media (max-width: 768px) {
+    .nav-phone span {
+        display: inline !important;
+    }
+}
+
+/* 超小屏幕电话号码显示 */
+@media (max-width: 480px) {
+    .nav-phone span {
+        display: inline !important;
+    }
+}
